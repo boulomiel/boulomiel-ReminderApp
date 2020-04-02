@@ -1,0 +1,77 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.rubenmimoun.reminderapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="15"
+8-->C:\Users\ruben\Projects\ReminderApp\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\ruben\Projects\ReminderApp\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+11-->C:\Users\ruben\Projects\ReminderApp\app\src\main\AndroidManifest.xml:5:5-80
+11-->C:\Users\ruben\Projects\ReminderApp\app\src\main\AndroidManifest.xml:5:22-78
+12
+13    <application
+13-->C:\Users\ruben\Projects\ReminderApp\app\src\main\AndroidManifest.xml:7:5-36:19
+14        android:allowBackup="true"
+14-->C:\Users\ruben\Projects\ReminderApp\app\src\main\AndroidManifest.xml:8:9-35
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.2.0] C:\Users\ruben\.gradle\caches\transforms-2\files-2.1\b7e94fce3ebe8fef6b770e7361468b74\core-1.2.0\AndroidManifest.xml:24:18-86
+16        android:debuggable="true"
+17        android:icon="@mipmap/ic_launcher"
+17-->C:\Users\ruben\Projects\ReminderApp\app\src\main\AndroidManifest.xml:9:9-43
+18        android:label="@string/app_name"
+18-->C:\Users\ruben\Projects\ReminderApp\app\src\main\AndroidManifest.xml:10:9-41
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->C:\Users\ruben\Projects\ReminderApp\app\src\main\AndroidManifest.xml:11:9-54
+20        android:supportsRtl="true"
+20-->C:\Users\ruben\Projects\ReminderApp\app\src\main\AndroidManifest.xml:12:9-35
+21        android:testOnly="true"
+22        android:theme="@style/AppTheme" >
+22-->C:\Users\ruben\Projects\ReminderApp\app\src\main\AndroidManifest.xml:13:9-40
+23        <activity
+23-->C:\Users\ruben\Projects\ReminderApp\app\src\main\AndroidManifest.xml:14:9-17:68
+24            android:name="com.rubenmimoun.reminderapp.NotificationListActivity"
+24-->C:\Users\ruben\Projects\ReminderApp\app\src\main\AndroidManifest.xml:15:13-53
+25            android:label="@string/title_activity_notification_list"
+25-->C:\Users\ruben\Projects\ReminderApp\app\src\main\AndroidManifest.xml:16:13-69
+26            android:theme="@style/AppTheme.NoActionBar" />
+26-->C:\Users\ruben\Projects\ReminderApp\app\src\main\AndroidManifest.xml:17:13-56
+27        <activity android:name="com.rubenmimoun.reminderapp.MainActivity" >
+27-->C:\Users\ruben\Projects\ReminderApp\app\src\main\AndroidManifest.xml:19:9-25:20
+27-->C:\Users\ruben\Projects\ReminderApp\app\src\main\AndroidManifest.xml:19:19-47
+28            <intent-filter>
+28-->C:\Users\ruben\Projects\ReminderApp\app\src\main\AndroidManifest.xml:20:13-24:29
+29                <action android:name="android.intent.action.MAIN" />
+29-->C:\Users\ruben\Projects\ReminderApp\app\src\main\AndroidManifest.xml:21:17-69
+29-->C:\Users\ruben\Projects\ReminderApp\app\src\main\AndroidManifest.xml:21:25-66
+30
+31                <category android:name="android.intent.category.LAUNCHER" />
+31-->C:\Users\ruben\Projects\ReminderApp\app\src\main\AndroidManifest.xml:23:17-77
+31-->C:\Users\ruben\Projects\ReminderApp\app\src\main\AndroidManifest.xml:23:27-74
+32            </intent-filter>
+33        </activity>
+34
+35        <receiver
+35-->C:\Users\ruben\Projects\ReminderApp\app\src\main\AndroidManifest.xml:27:9-35:20
+36            android:name="com.rubenmimoun.reminderapp.BroadcastManager"
+36-->C:\Users\ruben\Projects\ReminderApp\app\src\main\AndroidManifest.xml:28:13-44
+37            android:label="BroadcastReceiverAux" >
+37-->C:\Users\ruben\Projects\ReminderApp\app\src\main\AndroidManifest.xml:29:13-49
+38            <intent-filter>
+38-->C:\Users\ruben\Projects\ReminderApp\app\src\main\AndroidManifest.xml:30:13-34:29
+39                <action android:name="ALARM" />
+39-->C:\Users\ruben\Projects\ReminderApp\app\src\main\AndroidManifest.xml:31:17-48
+39-->C:\Users\ruben\Projects\ReminderApp\app\src\main\AndroidManifest.xml:31:25-45
+40
+41                <category android:name="android.intent.category.DEFAULT" />
+41-->C:\Users\ruben\Projects\ReminderApp\app\src\main\AndroidManifest.xml:33:17-76
+41-->C:\Users\ruben\Projects\ReminderApp\app\src\main\AndroidManifest.xml:33:27-73
+42            </intent-filter>
+43        </receiver>
+44    </application>
+45
+46</manifest>
